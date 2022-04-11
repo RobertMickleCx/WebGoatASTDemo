@@ -1,4 +1,10 @@
 # Docker
+- task: Checkmarx AST@2
+  inputs:
+    CheckmarxService: 'Robert Test AST Azure'
+    projectName: '$(Build.Repository.Name)'
+    branchName: '$(Build.SourceBranchName)'
+    tenantName: 'dp_wp_na'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
